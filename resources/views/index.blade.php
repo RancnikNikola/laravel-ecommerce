@@ -26,7 +26,9 @@
                     <div class="text-left">
                         <h1 class="text-white text-2xl font-bold uppercase md:text-3xl text-left pl-3">Fitness</h1>
                         <p class="text-white text-left text-justify w-2/3 pl-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, quam earum cumque explicabo quae rerum.</p>
-                        <button class="self-start mt-4 ml-4 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">Shop Now</button>
+                        <button class="self-start mt-4 ml-4 px-4 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                            Shop Now
+                        </button>
                     </div>
                 </div>
             </div>

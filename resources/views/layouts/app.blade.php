@@ -55,14 +55,14 @@
                 <ul class="flex uppercase font-semibold space-x-10 mx-auto">
                     <li><a href="/" class="">Home</a></li>
                     <li><a href="/shop" class="">Shop</a></li>
-                    <li><a href="#" class="">Categories</a></li>
-                    <li><a href="#" class="">Contact</a></li>
-                    <li><a href="#" class="">About</a></li>
+                    <li><a href="/categories" class="">Categories</a></li>
+                    <li><a href="/contact" class="">Contact</a></li>
+                    <li><a href="/about" class="">About</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center mt-4">
             
                 <input type="text" class="border-2 border-gray-300 bg-white mt-4 w-1/2 h-10 rounded-lg text-sm focus:outline-none" placeholder="Search anything...">
                 <div class="absolute top-4 right-3"> 

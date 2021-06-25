@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Livewire\ShopIndex;
+use App\Http\Livewire\AboutIndex;
+use App\Http\Livewire\ContactIndex;
+use App\Http\Livewire\CategoriesIndex;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +22,10 @@ Route::get('/', function () {
 });
 
 Route::get('/shop', ShopIndex::class);
+Route::get('/categories', CategoriesIndex::class);
+Route::get('/contact', ContactIndex::class);
+Route::get('/about', AboutIndex::class);
+
+
 
 require __DIR__.'/auth.php';
