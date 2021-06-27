@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cetegory;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
-class CetegoryController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class CetegoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('categories.index');
     }
 
     /**
@@ -41,21 +41,25 @@ class CetegoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Cetegory  $cetegory
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Cetegory $cetegory)
+    public function show(Category $category)
     {
-        //
+        return view('categories.show', [
+            'category' => $category,
+            // 'backUrl' => url()->previous() !== url()->full()
+            //     ? url()->previous() : route('categories.index'),
+        ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Cetegory  $cetegory
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Cetegory $cetegory)
+    public function edit(Category $category)
     {
         //
     }
@@ -64,10 +68,10 @@ class CetegoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Cetegory  $cetegory
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Cetegory $cetegory)
+    public function update(Request $request, Category $category)
     {
         //
     }
@@ -75,10 +79,10 @@ class CetegoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Cetegory  $cetegory
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cetegory $cetegory)
+    public function destroy(Category $category)
     {
         //
     }

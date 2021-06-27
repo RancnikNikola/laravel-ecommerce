@@ -3,8 +3,12 @@
 use App\Http\Livewire\ShopIndex;
 use App\Http\Livewire\AboutIndex;
 use App\Http\Livewire\ContactIndex;
+use App\Http\Livewire\ProductsIndex;
 use App\Http\Livewire\CategoriesIndex;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +26,13 @@ Route::get('/', function () {
 });
 
 Route::get('/shop', ShopIndex::class);
-Route::get('/categories', CategoriesIndex::class);
 Route::get('/contact', ContactIndex::class);
 Route::get('/about', AboutIndex::class);
+Route::get('all_products', ProductsIndex::class);
+Route::get('/all_products/{product:name}', [ProductController::class, 'show'])->name('products.show');
+
+Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
+Route::get('/categories/{category:id}', [CategoryController::class, 'show'])->name('categories.show');
 
 
 

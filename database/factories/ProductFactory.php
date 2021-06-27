@@ -22,6 +22,7 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
+            'category_id' => $this->faker->numberBetween(1, 4),
             'name' => ucwords($this->faker->words(2, true)),
             'description' => $this->faker->paragraph(3),
             'quantity' => $this->faker->numberBetween(0, 20),

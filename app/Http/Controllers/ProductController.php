@@ -46,7 +46,11 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('products.show', [
+            'product' => $product,
+            // 'backUrl' => url()->previous() !== url()->full()
+            //     ? url()->previous() : route('categories.index'),
+        ]);
     }
 
     /**

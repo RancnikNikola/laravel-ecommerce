@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="container bg-cover bg-center mx-auto mt-4" style="height:32rem; background-image: url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
+    <div class="container bg-cover bg-center mx-auto mt-4" style="height:22rem; background-image: url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
         <div class="flex items-center h-full w-full bg-gray-900 bg-opacity-50">
             <div class="text-left">
                 <h1 class="text-white text-2xl font-bold uppercase md:text-3xl text-left pl-3">Electronics</h1>
