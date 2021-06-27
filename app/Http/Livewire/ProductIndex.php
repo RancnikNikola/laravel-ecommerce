@@ -18,6 +18,10 @@ class ProductIndex extends Component
 
     public function render()
     {
-        return view('livewire.product-index');
+        $products = Product::with('category')->simplePaginate(5);
+
+        return view('livewire.product-index', [
+            'products' => $products
+        ]);
     }
 }

@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,8 @@ Route::get('/all_products/{product:name}', [ProductController::class, 'show'])->
 
 Route::get('/categories', [CategoryController::class, 'index'])->name('categories.index');
 Route::get('/categories/{category:id}', [CategoryController::class, 'show'])->name('categories.show');
+
+Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
 
 
 
